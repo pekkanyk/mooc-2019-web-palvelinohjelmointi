@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="fragments/layout :: head" lang="en">
+        <meta charset="UTF-8" />
+        <title>Supersite</title>
+    </head>
+        
+    <body>
+        <header th:replace="fragments/layout :: header"></header>
+            
+
+        <section th:replace="fragments/layout :: slogan"></section>
+
+
+        <main>
+            <p>See more cool sites!</p>
+
+            <ul>
+                <li><a href="https://www.coolsiteoftheday.com">https://www.coolsiteoftheday.com</a></li>
+                <li><a href="https://unsplash.com/">https://unsplash.com/</a></li>
+            </ul>
+        </main>
+
+        <footer th:replace="fragments/layout :: footer"></footer>
+    </body>
+</html>

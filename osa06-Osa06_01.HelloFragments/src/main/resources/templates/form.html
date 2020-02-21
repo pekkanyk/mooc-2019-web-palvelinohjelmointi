@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="fragments/layout :: head" lang="en">
+        <meta charset="UTF-8" />
+        <title>Supersite</title>
+    </head>
+        
+    <body>
+        <header th:replace="fragments/layout :: header"></header>
+            
+
+        <section th:replace="fragments/layout :: slogan"></section>
+            
+
+        <main>
+            <p>What site would you want to see listed?</p>
+        </main>
+
+        <form th:action="@{/index}" method="POST">
+            <input type="text" name="site"/>
+            <input type="submit" value="Suggest! (no guarantees)"/>
+        </form>
+
+        <footer th:replace="fragments/layout :: footer"></footer>
+            
+    </body>
+</html>
